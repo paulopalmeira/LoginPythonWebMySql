@@ -12,7 +12,7 @@ conexao = mysql.connector.connect(
 cursor = conexao.cursor()
 
 # Executando a consulta
-consulta = "SELECT salary FROM employees WHERE salary > 5000 AND department_id <> 3"
+consulta = "SELECT salary FROM employees WHERE salary > 5000 AND department_id = 1"
 cursor.execute(consulta)
 
 # Recuperando os resultados da consulta
